@@ -54,6 +54,20 @@ $(function(){
     })
 })
 
+//排行榜表單切換 2023-05-23_S
+$(document).on("click","main .evoRankWrap .data",function(){
+    $(this)
+    .addClass('active')
+    .find('.titleic')
+    .addClass('active');
+})
+$(document).on("click","main .evoRankWrap .data.active",function(){
+    $(this)
+    .removeClass('active')
+    .find('.titleic')
+    .removeClass('active');
+})
+
 //filter
 $(function(){
     $('.jumpWindow .close').click(function(){

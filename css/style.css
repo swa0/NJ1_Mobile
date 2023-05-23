@@ -342,6 +342,11 @@ footer i {
   background-size: contain;
 }
 
+.evoRankWrap .data .title::before {
+  background: url("../images/icon/memberIC.png") no-repeat;
+  background-size: 900%;
+}
+
 header .logo {
   height: 80%;
   -o-object-fit: contain;
@@ -3343,6 +3348,9 @@ html body .memberWrap .options i.lang {
 }
 html body .memberWrap .options i.logout {
   background-position-x: 87.5%;
+}
+html body .memberWrap .options i.evoRank {
+  background-position-x: 100%;
 }
 html body .memberWrap .options .arrow_ic {
   display: block;
@@ -7684,4 +7692,125 @@ html body .inviteWrap .remindBox p.title {
 }
 html body .inviteWrap .remindBox p.title:first-child {
   margin-top: 0;
+}
+html body .evoRankWrap {
+  width: 100%;
+  height: calc(100vh - 96px);
+  overflow-y: auto;
+  background: #101010;
+  padding: 0 3vw 3vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .evoRankWrap .data {
+  width: 100%;
+  height: 7vw;
+  padding-top: 5vw;
+  overflow: hidden;
+  cursor: pointer;
+}
+html body .evoRankWrap .data.active {
+  height: auto;
+}
+html body .evoRankWrap .data.active .titleic::after {
+  display: none;
+}
+html body .evoRankWrap .data .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffc13c;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  padding-left: 10vw;
+  margin-bottom: 5vw;
+  position: relative;
+}
+html body .evoRankWrap .data .title::before {
+  content: "";
+  width: 7vw;
+  height: 7vw;
+  background-position-x: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .evoRankWrap .data .title .titleic {
+  width: 4vw;
+  height: 4vw;
+  margin-left: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+}
+html body .evoRankWrap .data .title .titleic::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ffc13c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .evoRankWrap .data .title .titleic::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #ffc13c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .evoRankWrap .data table {
+  width: 100%;
+  height: auto;
+}
+html body .evoRankWrap .data table tr {
+  border: 1px solid #ffc13c;
+}
+html body .evoRankWrap .data table tr th, html body .evoRankWrap .data table tr td {
+  width: auto;
+  height: auto;
+}
+html body .evoRankWrap .data table tr th:first-child, html body .evoRankWrap .data table tr td:first-child {
+  width: 16%;
+}
+html body .evoRankWrap .data table tr th:nth-of-type(2), html body .evoRankWrap .data table tr td:nth-of-type(2) {
+  width: 42%;
+}
+html body .evoRankWrap .data table tr th:last-child, html body .evoRankWrap .data table tr td:last-child {
+  width: 42%;
+}
+html body .evoRankWrap .data table tr th:last-child p, html body .evoRankWrap .data table tr td:last-child p {
+  border-right: none;
+}
+html body .evoRankWrap .data table tr th p, html body .evoRankWrap .data table tr td p {
+  color: #ffc13c;
+  font-size: 18px;
+  border-right: 1px solid #ffc13c;
+  text-align: center;
+  line-height: 40px;
+  white-space: nowrap;
+}
+html body .evoRankWrap .data table tr th p span, html body .evoRankWrap .data table tr td p span {
+  font-family: fansong;
+  padding-top: 10px;
+}
+html body .evoRankWrap .data .update {
+  color: #ffc13c;
+  font-size: 0.9rem;
+  margin-top: 3vw;
+  text-align: right;
+}
+html body .evoRankWrap .data .update span.time {
+  margin-left: 3vw;
 }

@@ -310,6 +310,11 @@ footer i {
     background-size: contain;
 }
 
+//排行榜
+.evoRankWrap .data .title::before {
+    background: url('../images/icon/memberIC.png') no-repeat;
+    background-size: 900%;
+}
 
 ////////img↓
 
