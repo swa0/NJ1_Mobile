@@ -3341,10 +3341,12 @@ html body .memberWrap .options i.helpAbout {
   background-position-x: 50%;
 }
 html body .memberWrap .options i.app {
-  background-position-x: 62.5%;
+  background-position-x: 61.9%;
 }
 html body .memberWrap .options i.lang {
-  background-position-x: 75%;
+  width: 7vw;
+  height: 7vw;
+  background-position-x: 74.1%;
 }
 html body .memberWrap .options i.logout {
   background-position-x: 87.5%;
