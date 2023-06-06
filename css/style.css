@@ -2746,17 +2746,17 @@ html body .walletWrap .walletBox .content {
 html body .walletWrap .walletBox .content .amount {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border-bottom: solid 1px #ffc13c;
 }
 html body .walletWrap .walletBox .content .amount .half {
-  width: 50%;
+  width: 100%;
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 12px 0 12px 22px;
+  padding: 3vw 4vw;
+}
+html body .walletWrap .walletBox .content .amount .half:first-child {
+  padding-bottom: 1.5%;
 }
 html body .walletWrap .walletBox .content .amount .half .title {
   display: -webkit-box;
@@ -2765,7 +2765,7 @@ html body .walletWrap .walletBox .content .amount .half .title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 3vw;
   color: #ffc13c;
   font-size: 3.7vw;
   font-weight: bold;

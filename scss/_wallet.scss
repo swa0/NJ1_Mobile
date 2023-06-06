@@ -23,19 +23,26 @@
             .amount {
                 width: 100%;
                 height: auto;
-                display: flex;
+                // display: flex;
                 border-bottom: solid 1px $mainBorder_1;
 
                 .half {
-                    width: 50%;
+                    // width: 50%;
+                    width: 100%;
                     height: auto;
                     box-sizing: border-box;
-                    padding: 12px 0 12px 22px;
+                    // padding: 12px 0 12px 22px;
+                    padding: 3vw 4vw;
+
+                    &:first-child {
+                        padding-bottom: 1.5%;
+                    }
 
                     .title {
                         display: flex;
                         align-items: center;
-                        margin-bottom: 16px;
+                        // margin-bottom: 16px;
+                        margin-bottom: 3vw;
                         color: $mainWord_1;
                         font-size: 3.7vw;
                         font-weight: bold;
